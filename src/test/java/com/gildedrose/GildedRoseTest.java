@@ -25,7 +25,7 @@ class GildedRoseTest {
     }
     
     @Test
-    void agedBrie_checkQualityDouble_sellOut() {
+    void agedBrie_checkQualityDouble_sellInBelow0() {
         Item[] items = new Item[] { new Item("Aged Brie", 0, 1) };
         GildedRose app = new GildedRose(items);
         app.update();
@@ -65,7 +65,7 @@ class GildedRoseTest {
     }
     
     @Test
-    void passes_checkQualityIncrease_sellInUnder10() {
+    void passes_checkQualityIncrease_sellInBelow10() {
         Item[] items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 10, 10) };
         GildedRose app = new GildedRose(items);
         app.update();
@@ -75,7 +75,7 @@ class GildedRoseTest {
     }
     
     @Test
-    void passes_checkQualityIncrease_sellInUnder5() {
+    void passes_checkQualityIncrease_sellInBelow5() {
         Item[] items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 5, 10) };
         GildedRose app = new GildedRose(items);
         app.update();
@@ -105,7 +105,7 @@ class GildedRoseTest {
     }
     
     @Test
-    void item_checkQuality_underSellIn() {
+    void item_checkQuality_sellInBelow0() {
         Item[] items = new Item[] { new Item("item", 0, 10) };
         GildedRose app = new GildedRose(items);
         app.update();
@@ -125,7 +125,7 @@ class GildedRoseTest {
     } 
     
     @Test
-    void conjured_checkQuality_underSellIn() {
+    void conjured_checkQuality_sellInBelow0() {
         Item[] items = new Item[] { new Item("Conjured Mana Cake", 0, 10) };
         GildedRose app = new GildedRose(items);
         app.update();
