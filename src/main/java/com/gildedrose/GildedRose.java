@@ -38,7 +38,10 @@ class GildedRose {
 			item.quality = item.quality - 1;
         }
 		updateSellIn(item);
-	}
+		if (item.sellIn < 0 && item.quality > 0) {
+            	item.quality = item.quality - 1;
+            }
+    }
 
 	private void updateConjured(Item item) {
 		// TODO Auto-generated method stub
@@ -63,6 +66,9 @@ class GildedRose {
              }
          }
 		 updateSellIn(item);
+		 if (item.sellIn < 0) {
+			 item.quality = item.quality - item.quality;
+         }
 		
 	}
 
