@@ -26,10 +26,6 @@ class GildedRose {
     		 	default:
     		 		updateNormalItems(item);
     		 }
-    		 
-    		 afterUpdateSellIn(item);
-    		 
-    		 
     	 }    	
     }
     
@@ -48,7 +44,7 @@ class GildedRose {
 	}
 
 	private void updateSulfuras(Item item) {
-		// nothing to do
+		// Nothing to do
 	}
 
 	private void updatePass(Item item) {
@@ -86,10 +82,6 @@ class GildedRose {
     	if (!item.name.equals("Sulfuras, Hand of Ragnaros")) {
             item.sellIn = item.sellIn - 1;
         }
-	}
-
-	private void afterUpdateSellIn(Item item) {
-		// TODO Auto-generated method stub
 	}
 	
 	/*
